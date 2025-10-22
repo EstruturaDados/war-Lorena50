@@ -12,7 +12,7 @@ struct Territorio {
 
  int main(){
     struct Territorio mapa[Max_Territorios];
-    int total_territorios = 0;
+    int total_territorios = 1;
 
     printf("Desafio War\n");
 
@@ -21,7 +21,7 @@ struct Territorio {
     printf("Vamos cadastrar os 5 territorios iniciais do nosso mundo.\n");
     while (Max_Territorios<=5)
     {
-       printf("---Cadastrando Territorio 1---\n");
+       printf("---Cadastrando Territorio %d ---\n", total_territorios);
        printf("Nome do Territorio: ");
        fgets(mapa[total_territorios].nome, 30,stdin);
        printf("Cor do Exercito: ");
