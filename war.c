@@ -27,7 +27,11 @@ struct Territorio {
        printf("Cor do Exercito: ");
        fgets(mapa[total_territorios].cor, 10,stdin);
        printf("Numero de tropas: ");
-       fgets(mapa[total_territorios].tropas,2,stdin);
+       scanf("%d", &mapa[total_territorios].tropas);
+
+       total_territorios++;
+
+       printf("\nTerritorio cadastrado com sucesso!\n\n");
 
     }
     
