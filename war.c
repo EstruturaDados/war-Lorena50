@@ -4,24 +4,30 @@
 // --- Constantes Globais ---
 #define Max_Territorios 5
 
+struct Territorio {
+    char nome[30];
+    char cor[10];
+    int tropas [2];
+};
+
  int main(){
+    struct Territorio mapa[Max_Territorios];
     int total_territorios = 0;
+
     printf("Desafio War\n");
 
-    struct Territorio {
-        char nome[30];
-        char cor[10];
-        int tropas;
-    };
+ 
     printf("-------------------------------------------------------------\n");
     printf("Vamos cadastrar os 5 territorios iniciais do nosso mundo.\n");
     while (Max_Territorios<=5)
     {
        printf("---Cadastrando Territorio 1---\n");
        printf("Nome do Territorio: ");
-       fgets(Territorio)
+       fgets(mapa[total_territorios].nome, 30,stdin);
        printf("Cor do Exercito: ");
+       fgets(mapa[total_territorios].cor, 10,stdin);
        printf("Numero de tropas: ");
+       fgets(mapa[total_territorios].tropas,2,stdin);
 
     }
     
